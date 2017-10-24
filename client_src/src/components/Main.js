@@ -5,6 +5,7 @@ import About from './About';
 import MeetupDetails from './MeetupDetails';
 import AddMeetup from './AddMeetup';
 import EditMeetup from './EditMeetup';
+import NotFound from './NotFound';
 
 const Main = () => (
   <main>
@@ -14,6 +15,7 @@ const Main = () => (
       <Route exact path='/meetups/add' component={AddMeetup} />
       <Route exact path='/meetups/edit/:id' component={EditMeetup} />
       <Route exact path='/meetups/:id' component={MeetupDetails} />
+      <Route component={NotFound} />
     </Switch>
   </main>
 )

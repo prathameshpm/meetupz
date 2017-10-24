@@ -38,5 +38,9 @@
   "meetups": {
     "dataSource": "db",
     "public": true
+  },
+  "creator": {
+    "dataSource": "db",
+    "public": true
   }
 }

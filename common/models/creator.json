@@ -1,5 +1,6 @@
 {
-  "name": "meetups",
+  "name": "creator",
+  "plural": "creator",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -9,20 +10,13 @@
     "name": {
       "type": "string",
       "required": true
-    },
-    "city": {
-      "type": "string",
-      "required": true
-    },
-    "address": {
-      "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "creator": {
-      "type": "belongsTo",
-      "model": "creator",
+    "meetups": {
+      "type": "hasMany",
+      "model": "meetups",
       "foreignKey": "publisherId",
       "options": {
         "nestRemoting": true
@@ -31,15 +25,9 @@
   },
   "acls": [
     {
-      "accessType": "READ",
+      "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "WRITE",
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
       "permission": "ALLOW"
     }
   ],
