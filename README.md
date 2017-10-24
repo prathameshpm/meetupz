@@ -12,6 +12,7 @@ $ cd meetupz
 $ npm install
 ```
 *You need MongoDB installed as I am using the Mongo connector for Loopback.*
+
 3) To check if MongoDB is running, run
 ```sh
 $ mongo localhost:27017
