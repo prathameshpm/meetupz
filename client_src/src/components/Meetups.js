@@ -15,7 +15,7 @@ class Meetups extends Component {
   }
 
   getMeetups() {
-    axios.get('https://young-springs-94270.herokuapp.com/api/meetups')
+    axios.get('http://localhost:3000/api/meetups')
       .then(respone => {
         this.setState({meetups: respone.data})
       }).catch(err => console.log(err));

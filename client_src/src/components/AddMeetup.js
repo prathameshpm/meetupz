@@ -6,7 +6,7 @@ class AddMeetup extends Component {
   addMeetup(newMeetup) {
     axios.request({
       method:'post',
-      url:'https://young-springs-94270.herokuapp.com/api/meetups',
+      url:'http://localhost:3000/api/meetups',
       data: newMeetup
     }).then(respone => {
       this.props.history.push('/');

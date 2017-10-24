@@ -1,6 +1,12 @@
 {
   "db": {
-    "connector": "loopback-connector-mongodb",
-    "url": "mongodb://test:test@ds227325.mlab.com:27325/meetupz-app",
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "meetupz-app",
+    "password": "",
+    "name": "db",
+    "user": "",
+    "connector": "mongodb"
   }
 }
