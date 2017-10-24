@@ -4,9 +4,9 @@
     "port": 27017,
     "url": "mongodb://test:test@ds227325.mlab.com:27325/meetupz-app",
     "database": "meetupz-app",
-    "password": "",
+    "password": "test",
     "name": "db",
-    "user": "",
+    "user": "test",
     "connector": "mongodb"
   }
 }
