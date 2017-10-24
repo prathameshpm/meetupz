@@ -7,7 +7,7 @@ class Navbar extends Component {
       <div>
         <nav className="green lighten-1">
           <div className="nav-wrapper">
-            <a href="/" className="brand-logo">Meetupz</a>
+            <a href="/" className="brand-logo center">Meetupz</a>
             <a data-activates="main-menu" className="button-collapse show-on-large">
               <i className="fa fa-bars"></i>
             </a>
