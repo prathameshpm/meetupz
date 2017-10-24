@@ -16,7 +16,7 @@ class MeetupDetails extends Component {
 
   getMeetup() {
     let meetupId = this.props.match.params.id;
-    axios.get(`http://localhost:3000/api/meetups/${meetupId}`)
+    axios.get(`https://young-springs-94270.herokuapp.com/api/meetups/${meetupId}`)
       .then(respone => {
         this.setState({details: respone.data})
       }).catch(err => console.log(err));
@@ -24,7 +24,7 @@ class MeetupDetails extends Component {
 
   onDelete() {
     let meetupId = this.state.details.id;
-    axios.delete(`http://localhost:3000/api/meetups/${meetupId}`)
+    axios.delete(`https://young-springs-94270.herokuapp.com/api/meetups/${meetupId}`)
     .then(respone => {
       this.props.history.push('/');
     }).catch(err => console.log(err));

@@ -21,7 +21,7 @@ class EditMeetup extends Component {
 
   getMeetupDetails() {
     let meetupId = this.props.match.params.id;
-    axios.get(`http://localhost:3000/api/meetups/${meetupId}`)
+    axios.get(`https://young-springs-94270.herokuapp.com/api/meetups/${meetupId}`)
       .then(respone => {
         this.setState({
           id: respone.data.id,
@@ -37,7 +37,7 @@ class EditMeetup extends Component {
   editMeetup(newMeetup) {
     axios.request({
       method:'put',
-      url:`http://localhost:3000/api/meetups/${this.state.id}`,
+      url:`https://young-springs-94270.herokuapp.com/api/meetups/${this.state.id}`,
       data: newMeetup
     }).then(respone => {
       this.props.history.push('/');
