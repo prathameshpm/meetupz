@@ -11,17 +11,26 @@ $ git clone https://github.com/prathameshpm/meetupz.git
 $ cd meetupz
 $ npm install
 ```
+3) Build front end
+```sh
+$ cd client_src
+$ npm install -g create-react-app
+$ npm install
+$ npm run build
+$ cd ..
+```
+
 *You need MongoDB installed as I am using the Mongo connector for Loopback.*
 
-3) To check if MongoDB is running, run
+4) To check if MongoDB is running, run
 ```sh
 $ mongo localhost:27017
 ```
-4) Run the Application
+5) Run the Application
 ```sh
 $ node .
 ```
-5) See it in action in your browser at following address:-
+6) See it in action in your browser at following address:-
 ```sh
 http://localhost:3000/
 ```
